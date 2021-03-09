@@ -1,0 +1,5 @@
+2020-12-31 14:15:38.236  INFO 9352 --- [restartedMain] com.guolong.BlogApplication              : Starting BlogApplication using Java 1.8.0_232 on DESKTOP-5L1P7UD with PID 9352 (C:\springbootblogger\blog\target\classes started by guolong in C:\springbootblogger\blog)
+2020-12-31 14:15:38.239  INFO 9352 --- [restartedMain] com.guolong.BlogApplication              : The following profiles are active: pro
+2020-12-31 14:15:41.110  WARN 9352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 14:15:41.404  WARN 9352 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-31 14:15:41.561  INFO 9352 --- [restartedMain] com.guolong.BlogApplication              : Started BlogApplication in 3.777 seconds (JVM running for 4.694)

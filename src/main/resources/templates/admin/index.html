@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../css/me.css">
+</head>
+
+<body>
+    <!--導航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary menu stackable">
+                <h2 class="ui teal header item">管理後台</h2>
+                <a href="/admin/blogs" class="m-item m-mobile-hide item"><i class="home icon"></i>博客</a>
+                <a href="/admin/types" class="m-item m-mobile-hide item"><i class="idea icon"></i>分類</a>
+                <a href="/admin/tags" class="m-item m-mobile-hide item"><i class="tags icon"></i>標籤</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img src="../../images/01100962-01.jpg" alt="" class="ui avatar image">
+                          	  馮國隆
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="/admin/logout" class="item">註銷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    
+
+    <!--中間內容-->
+    <div class="m-padded-tb-big m-container-small">
+        <div class="ui container">
+            <div class="ui container">
+                <div class="ui success large  message">
+                    <h3>Hi,</h3>
+                    <p>馮國隆, 歡迎登入!</p>
+                </div>
+
+                <img src="../../images/1920x1080_06.jpg" alt="" class="ui rounded bordered fluid image">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../../images/01100962-01.jpg" class="ui rounded image" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">聯繫我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: bkjgg7a3f2@gmail.com</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">小馮</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">這是我的個人博客，會分享關於編程、寫作、思考相關的任何內容，希望可以給來到這兒的人有所幫助...
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020-2021 小馮 Designed by 小馮</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+
+    </script>
+</body>
+
+</html>

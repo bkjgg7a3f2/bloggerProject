@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../css/me.css">
+</head>
+
+<body>
+    <!--導航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary menu stackable">
+                <h2 class="ui teal header item">Blogger</h2>
+                <a href="#" data-th-href="@{/}" class="m-item m-mobile-hide item"><i class="home icon"></i>首頁</a>
+                <a href="#" data-th-href="@{/types/-1}" class="m-item m-mobile-hide item"><i class="idea icon"></i>分類</a>
+                <a href="#" data-th-href="@{/tags/-1}" class="m-item m-mobile-hide item"><i class="tags icon"></i>標籤</a>
+                <a href="#" data-th-href="@{/archives}" class="m-item m-mobile-hide item"><i class="clone icon"></i>歸檔</a>
+                <a href="#" data-th-href="@{/about}" class="active m-item m-mobile-hide item"><i class="info icon"></i>關於我</a>
+                <div class="right item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--中間內容-->
+    <div class="m-padded-tb-large m-container">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <img src="images/table21_1920x1440.jpg" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">關於我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">馮國隆</p>
+                        <p class="m-text">熱愛編程</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label left pointing">編程</div>  
+                        <div class="ui orange basic label left pointing">寫作</div> 
+                        <div class="ui orange basic label left pointing">思考</div> 
+                        <div class="ui orange basic label left pointing">運動</div>           
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic label left pointing m-margin-tb-tiny">java</div>  
+                        <div class="ui teal basic label left pointing m-margin-tb-tiny">javascript</div> 
+                        <div class="ui teal basic label left pointing m-margin-tb-tiny">Node</div> 
+                        <div class="ui teal basic label left pointing m-margin-tb-tiny">springMVC</div>           
+                    </div>
+                    <div class="ui bottom attached segment">
+                         <a href="#" class="ui circular botton"><i class="github icon"></i></a>
+                         <a href="#" class="ui facebook circular botton"><i class="facebook icon"></i></a>
+                         <a href="#" class="ui instagram circular botton" data-content="guolong_feng" data-position="bottom center"><i class="instagram icon"></i></a>
+                    </div>
+                    <div class="ui facebook-qr flowing popup transition hidden">
+                        <img src="images/01100964-01.jpg" alt="" class="ui rounded image" style="width: 110px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="images/01100962-01.jpg" class="ui rounded image" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                        <a href="#" class="item">用戶故事 (User Story)</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">聯繫我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: bkjgg7a3f2@gmail.com</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">小馮</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">這是我的個人博客，會分享關於編程、寫作、思考相關的任何內容，希望可以給來到這兒的人有所幫助...
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020-2021 小馮 Designed by 小馮</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.instagram').popup();
+
+        $('.facebook').popup({
+            popup: $('.facebook-qr'),
+            position: 'bottom center'
+        });
+
+    </script>
+</body>
+
+</html>
